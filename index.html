@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Veloura Café — thoughtfully crafted coffee, matcha and pastries in a cozy, elegant space." />
+  <title>Veloura Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a href="#home" class="brand" aria-label="Veloura Café home">
+      <span>Veloura</span>
+      <span>café</span>
+      <i>♡</i>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#shop">Shop</a>
+      <a href="#favorites">Favorites <span class="nav-heart">♡</span></a>
+      <a href="#story">Our Story</a>
+      <a href="#location">Location</a>
+    </nav>
+
+    <a class="header-cta" href="#contact">Contact Us</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A little pause in your day</p>
+        <h1>Slow mornings.<br><em>Beautiful</em> moments.</h1>
+        <p class="hero-text">Thoughtfully crafted drinks, delicate pastries, and a cozy corner made for staying awhile.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu">Explore the menu <span>→</span></a>
+          <a class="text-link" href="#story">Our story</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-photo">
+          <img src="assets/veloura-cafe.jpg" alt="Coffee, iced latte and almond croissant at Veloura Café" />
+        </div>
+        <div class="floating-note">
+          <span>VEL</span>
+          <strong>Made with care</strong>
+          <span>♡</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Veloura Café values">
+      <div>COFFEE <span>♡</span> MATCHA <span>♡</span> PASTRIES <span>♡</span> SLOW MOMENTS <span>♡</span> COFFEE <span>♡</span> MATCHA <span>♡</span></div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Thoughtfully crafted</p>
+          <h2>Our Menu <span>♡</span></h2>
+        </div>
+        <p>Made for your favorite moments.<br>Simple, comforting, and a little special.</p>
+      </div>
+
+      <div class="filter-row reveal" role="tablist" aria-label="Menu categories">
+        <button class="filter active" data-filter="all">All Drinks</button>
+        <button class="filter" data-filter="coffee">Coffee</button>
+        <button class="filter" data-filter="matcha">Matcha</button>
+        <button class="filter" data-filter="noncoffee">Non-Coffee</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-column">
+          <h3>Coffee</h3>
+          <article class="menu-item" data-category="coffee">
+            <div class="drink-img drink-latte"></div><div class="item-info"><h4>Veloura Latte</h4><p>Smooth espresso with creamy milk and our signature touch.</p></div><strong>$5.25</strong><button class="heart" aria-label="Save Veloura Latte">♡</button>
+          </article>
+          <article class="menu-item" data-category="coffee">
+            <div class="drink-img drink-caramel"></div><div class="item-info"><h4>Almond Caramel</h4><p>Rich espresso, almond milk, and caramel drizzle.</p></div><strong>$5.75</strong><button class="heart" aria-label="Save Almond Caramel">♡</button>
+          </article>
+          <article class="menu-item" data-category="coffee">
+            <div class="drink-img drink-iced"></div><div class="item-info"><h4>Classic Iced Coffee</h4><p>Bold and refreshing espresso poured over ice.</p></div><strong>$4.75</strong><button class="heart" aria-label="Save Classic Iced Coffee">♡</button>
+          </article>
+          <article class="menu-item" data-category="coffee">
+            <div class="drink-img drink-americano"></div><div class="item-info"><h4>Hot Americano</h4><p>Smooth and bold espresso shot with hot water.</p></div><strong>$3.75</strong><button class="heart" aria-label="Save Hot Americano">♡</button>
+          </article>
+        </div>
+
+        <div class="menu-column">
+          <h3>Matcha</h3>
+          <article class="menu-item" data-category="matcha">
+            <div class="drink-img drink-matcha"></div><div class="item-info"><h4>Iced Matcha</h4><p>Premium ceremonial matcha with milk over ice.</p></div><strong>$5.25</strong><button class="heart" aria-label="Save Iced Matcha">♡</button>
+          </article>
+          <article class="menu-item" data-category="matcha">
+            <div class="drink-img drink-matcha"></div><div class="item-info"><h4>Matcha Latte</h4><p>Creamy matcha latte made with our signature blend.</p></div><strong>$5.25</strong><button class="heart" aria-label="Save Matcha Latte">♡</button>
+          </article>
+          <article class="menu-item" data-category="matcha">
+            <div class="drink-img drink-matcha"></div><div class="item-info"><h4>Matcha Coconut</h4><p>Matcha with coconut milk and a hint of vanilla.</p></div><strong>$5.75</strong><button class="heart" aria-label="Save Matcha Coconut">♡</button>
+          </article>
+          <article class="menu-item" data-category="matcha">
+            <div class="drink-img drink-matcha"></div><div class="item-info"><h4>Matcha Espresso Fusion</h4><p>Matcha meets espresso for the perfect balance.</p></div><strong>$5.75</strong><button class="heart" aria-label="Save Matcha Espresso Fusion">♡</button>
+          </article>
+        </div>
+
+        <div class="menu-column">
+          <h3>Non-Coffee</h3>
+          <article class="menu-item" data-category="noncoffee">
+            <div class="drink-img drink-strawberry"></div><div class="item-info"><h4>Strawberry Tart</h4><p>Sweet strawberry and creamy milk. Like dessert in a cup.</p></div><strong>$5.75</strong><button class="heart" aria-label="Save Strawberry Tart">♡</button>
+          </article>
+          <article class="menu-item" data-category="noncoffee">
+            <div class="drink-img drink-chocolate"></div><div class="item-info"><h4>Chocolate Dream</h4><p>Rich chocolate with steamed milk. Pure comfort.</p></div><strong>$4.95</strong><button class="heart" aria-label="Save Chocolate Dream">♡</button>
+          </article>
+          <article class="menu-item" data-category="noncoffee">
+            <div class="drink-img drink-hojicha"></div><div class="item-info"><h4>Hojicha Latte</h4><p>Roasted green tea with milk. Warm, nutty, and soothing.</p></div><strong>$5.25</strong><button class="heart" aria-label="Save Hojicha Latte">♡</button>
+          </article>
+          <article class="menu-item" data-category="noncoffee">
+            <div class="drink-img drink-lemon"></div><div class="item-info"><h4>Lemonade Sparkle</h4><p>Fresh lemon with a touch of honey. Light and bright.</p></div><strong>$4.75</strong><button class="heart" aria-label="Save Lemonade Sparkle">♡</button>
+          </article>
+        </div>
+
+        <div class="addons">
+          <h3>Add-Ons</h3>
+          <div class="addon"><span>Extra Shot</span><b>$1.00</b></div>
+          <div class="addon"><span>Oat Milk</span><b>$0.75</b></div>
+          <div class="addon"><span>Almond Milk</span><b>$0.75</b></div>
+          <div class="addon"><span>Coconut Milk</span><b>$0.75</b></div>
+          <div class="addon"><span>Vanilla Syrup</span><b>$0.75</b></div>
+          <div class="addon"><span>Caramel Drizzle</span><b>$0.75</b></div>
+          <div class="addon"><span>Hazelnut Syrup</span><b>$0.75</b></div>
+          <div class="addon"><span>Whipped Cream</span><b>$0.75</b></div>
+          <div class="custom-card">
+            <div><p>Make it your own</p><small>Customize your drink<br>just the way you like it. ♡</small></div>
+            <div class="mini-coffee"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop section" id="shop">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Veloura, at home</p>
+          <h2>Make it <em>your own</em>.</h2>
+        </div>
+        <p>Bring the Veloura feeling home with beans, matcha and little extras made for slow mornings.</p>
+      </div>
+
+      <div class="shop-grid">
+        <article class="shop-card reveal" data-product="Veloura House Blend" data-price="14.00">
+          <div class="shop-image"><img src="assets/house-blend.jpg" alt="Veloura House Blend coffee beans" /><button class="favorite-btn" type="button" aria-label="Save Veloura House Blend" data-fav-id="house-blend" data-fav-name="Veloura House Blend" data-fav-price="14.00" data-fav-image="assets/house-blend.jpg">♡</button></div>
+          <div class="shop-card-body">
+            <p class="shop-type">COFFEE · 250G</p>
+            <h3>Veloura House Blend</h3>
+            <p>Silky, nutty and softly caramelized — made for your everyday latte.</p>
+            <div class="shop-card-bottom"><strong>$14.00</strong><button class="add-cart" type="button" aria-label="Add Veloura House Blend to cart"><span>＋</span><b>Add to cart</b></button></div>
+          </div>
+        </article>
+
+        <article class="shop-card reveal" data-product="Ceremonial Matcha" data-price="18.00">
+          <div class="shop-image"><img src="assets/matcha.jpg" alt="Veloura Ceremonial Matcha" /><button class="favorite-btn" type="button" aria-label="Save Ceremonial Matcha" data-fav-id="ceremonial-matcha" data-fav-name="Ceremonial Matcha" data-fav-price="18.00" data-fav-image="assets/matcha.jpg">♡</button></div>
+          <div class="shop-card-body">
+            <p class="shop-type">MATCHA · 40G</p>
+            <h3>Ceremonial Matcha</h3>
+            <p>Bright, creamy and smooth enough for your favorite iced matcha at home.</p>
+            <div class="shop-card-bottom"><strong>$18.00</strong><button class="add-cart" type="button" aria-label="Add Ceremonial Matcha to cart"><span>＋</span><b>Add to cart</b></button></div>
+          </div>
+        </article>
+
+        <article class="shop-card reveal" data-product="Vanilla Bean Syrup" data-price="9.50">
+          <div class="shop-image"><img src="assets/vanilla-syrup.jpg" alt="Veloura Vanilla Bean Syrup" /><button class="favorite-btn" type="button" aria-label="Save Vanilla Bean Syrup" data-fav-id="vanilla-syrup" data-fav-name="Vanilla Bean Syrup" data-fav-price="9.50" data-fav-image="assets/vanilla-syrup.jpg">♡</button></div>
+          <div class="shop-card-body">
+            <p class="shop-type">SYRUP · 250ML</p>
+            <h3>Vanilla Bean Syrup</h3>
+            <p>Sweet, warm vanilla for homemade lattes, iced coffees and matcha.</p>
+            <div class="shop-card-bottom"><strong>$9.50</strong><button class="add-cart" type="button" aria-label="Add Vanilla Bean Syrup to cart"><span>＋</span><b>Add to cart</b></button></div>
+          </div>
+        </article>
+
+        <article class="shop-card reveal" data-product="Almond Caramel Drizzle" data-price="8.50">
+          <div class="shop-image"><img src="assets/almond-drizzle.jpg" alt="Veloura Almond Caramel Drizzle" /><button class="favorite-btn" type="button" aria-label="Save Almond Caramel Drizzle" data-fav-id="almond-drizzle" data-fav-name="Almond Caramel Drizzle" data-fav-price="8.50" data-fav-image="assets/almond-drizzle.jpg">♡</button></div>
+          <div class="shop-card-body">
+            <p class="shop-type">TOPPING · 200ML</p>
+            <h3>Almond Caramel Drizzle</h3>
+            <p>Our cozy caramel finish for iced lattes, hot coffee and sweet treats.</p>
+            <div class="shop-card-bottom"><strong>$8.50</strong><button class="add-cart" type="button" aria-label="Add Almond Caramel Drizzle to cart"><span>＋</span><b>Add to cart</b></button></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="shop-note reveal"><span>♡</span><p><strong>Make your café ritual yours.</strong> Add a few favorites to your cart, then send your order straight to Veloura on WhatsApp.</p></div>
+    </section>
+
+    <section class="favorites section" id="favorites">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Your little collection</p>
+          <h2>Saved with <em>love</em> <span>♡</span></h2>
+        </div>
+        <p>Your favorite drinks, pastries and at-home essentials — all in one place.</p>
+      </div>
+      <div class="favorites-grid" id="favoritesGrid">
+        <div class="favorites-empty" id="favoritesEmpty">
+          <span>♡</span>
+          <h3>Nothing saved yet.</h3>
+          <p>Tap a heart anywhere on Veloura to build your little collection.</p>
+          <a class="text-link" href="#menu">Explore the menu →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-image reveal"><img src="assets/veloura-cafe.jpg" alt="Veloura Café coffee and pastry table" /></div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">Our story</p>
+        <h2>A café made for <em>staying</em>.</h2>
+        <p>Veloura began with a simple idea: coffee tastes better when you don't have to rush it.</p>
+        <p>We blend familiar comfort with little details that make an ordinary afternoon feel special — from carefully poured espresso to soft pastries fresh from the oven.</p>
+        <a class="text-link" href="#location">Come find your corner →</a>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <p class="eyebrow">At Veloura</p>
+      <blockquote>“Take your time. The best moments are rarely rushed.”</blockquote>
+      <span>♡</span>
+    </section>
+
+    <section class="visit section" id="location">
+      <div class="visit-copy reveal">
+        <p class="eyebrow">Come see us</p>
+        <h2>Your new favorite corner.</h2>
+        <div class="details">
+          <div><span>⌖</span><p><strong>Location</strong>123 Coffee Lane<br>Your City, YC 12345</p></div>
+          <div><span>◷</span><p><strong>Hours</strong>Mon — Fri &nbsp; 7:00 AM — 7:00 PM<br>Sat — Sun &nbsp; 8:00 AM — 6:00 PM</p></div>
+        </div>
+        <a class="button button-dark" href="#contact">Get directions <span>→</span></a>
+      </div>
+      <div class="map-card reveal">
+        <div class="map-grid"></div>
+        <div class="map-pin">♡</div>
+        <div class="map-label">VELOURA<br><small>123 COFFEE LANE</small></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Stay awhile</p>
+        <h2>Let's keep in touch.</h2>
+        <p>Get occasional notes from Veloura — new drinks, seasonal pastries, and café news.</p>
+        <form id="newsletterForm">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe →</button>
+        </form>
+        <p class="form-message" id="formMessage" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <a href="#top" class="brand footer-brand"><span>Veloura</span><span>café</span><i>♡</i></a>
+      <div><h4>Explore</h4><a href="#menu">Menu</a><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#location">Location</a></div>
+      <div><h4>Say hello</h4><a href="mailto:hello@velouracafe.com">hello@velouracafe.com</a><a href="tel:+1234567890">(123) 456-7890</a></div>
+      <div><h4>Follow</h4><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="TikTok">♪</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Veloura Café. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <div><p class="eyebrow">Your order</p><h2>Your Cart <span id="cartCountLabel">0</span></h2></div>
+      <button class="cart-close" id="cartClose" type="button" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart"><span>♡</span><p>Your cart is waiting for something cozy.</p><small>Add something from the shop to get started.</small></div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="whatsapp-order" id="whatsappOrder" type="button"><span>◔</span> Order on WhatsApp</button>
+      <small class="cart-help">Your order will open in WhatsApp with the items and total already written out.</small>
+    </div>
+  </aside>
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <button class="cart-tab" id="cartTab" type="button" aria-label="Open shopping cart" aria-expanded="false">
+    <span class="cart-icon">🛍</span><span class="cart-tab-text">Cart</span><b id="cartCount">0</b>
+  </button>
+
+  <div class="toast" id="toast">Saved to favorites ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
